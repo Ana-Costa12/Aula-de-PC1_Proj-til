@@ -22,7 +22,7 @@ namespace Aula_de_PC1_Projetil
             anguloG = Convert.ToDouble(Console.ReadLine());
 
             //Conversão de ângulos para radianos//
-            anguloRad = anguloG * (Math.PI/100);
+            anguloRad = anguloG * (Math.PI/180);
             //Aplicação de Torrivelli para alcance e altura//
             alcance = Math.Pow(velocidade, 2) * Math.Sin(2 * anguloRad) / g;
             altura = Math.Pow((velocidade * Math.Sin(anguloRad)), 2) / (2 * g);
